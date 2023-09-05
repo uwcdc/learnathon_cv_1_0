@@ -1,0 +1,15 @@
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - scikit-image
+  - mahotas
+  - imutils
+  - Pillow
+  - json_minify
+  
