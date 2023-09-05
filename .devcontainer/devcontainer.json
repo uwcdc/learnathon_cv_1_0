@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/anaconda
+{
+	"name": "Anaconda (Python 3)",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {},
+		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {},
+		"ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
+		"ghcr.io/devcontainers-contrib/features/wget-apt-get:1": {},
+		"ghcr.io/devcontainers/features/sshd:1": {"version": "latest"}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"gsGupta.opencv-snippets",
+				"GitHub.copilot",
+				"ms-vsliveshare.vsliveshare",
+				"ms-python.python"
+			]
+		}
+	},
+	"postCreateCommand": "sh .devcontainer/post_create.sh"
+}
